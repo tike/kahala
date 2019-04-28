@@ -4,20 +4,20 @@
     <div class="board">
       <div class="halfboard">
         <div>
-          <span *ngFor="let field of getOuterRow(0)">({{field.getID()}}|{{field.getStones()}})</span>
+          <app-field *ngFor="let field of getOuterRow(0)" player="0" [field]="field"></app-field>
         </div>
         <div>
-          <span *ngFor="let field of getInnerRow(0)">({{field.getID()}}|{{field.getStones()}})</span>
+          <app-field *ngFor="let field of getInnerRow(0)" player="0" [field]="field"></app-field>
         </div>
       </div>
 
       <div class="halfboard">
         <div>
-          <span *ngFor="let field of getInnerRow(1)">({{field.getID()}}|{{field.getStones()}})</span>
+          <app-field *ngFor="let field of getInnerRow(1)" player="0" [field]="field"></app-field>
         </div>
 
         <div>
-          <span *ngFor="let field of getOuterRow(1)">({{field.getID()}}|{{field.getStones()}})</span>
+          <app-field *ngFor="let field of getOuterRow(1)" player="0" [field]="field"></app-field>
         </div>
       </div>
     </div>
