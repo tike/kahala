@@ -5,9 +5,10 @@
 }
 
 .board {
-  @include centeredContainer(50%);
+  @include centeredContainer(80%);
 }
 
 .halfboard {
-  @include centeredContainer(90%);
+  margin: auto;
+  width: 510px;
 }
