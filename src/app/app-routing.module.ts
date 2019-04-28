@@ -7,7 +7,7 @@ import { HelpComponent } from './help/help.component';
 const routes: Routes = [
   { path: 'players', component: PlayersComponent },
   { path: 'help', component: HelpComponent },
-  { path: '', redirectTo: '/', pathMatch: 'full' },
+  { path: '', redirectTo: '/help', pathMatch: 'full' },
 ];
 
 @NgModule({
