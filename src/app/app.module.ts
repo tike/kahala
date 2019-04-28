@@ -10,13 +10,15 @@ import { AppComponent } from './app.component';
 import { HelpComponent } from './help/help.component';
 import { PlayersComponent } from './players/players.component';
 import { GameComponent } from './game/game.component';
+import { FieldComponent } from './field/field.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HelpComponent,
     GameComponent,
-    PlayersComponent
+    PlayersComponent,
+    FieldComponent
   ],
   imports: [
     BrowserModule,
