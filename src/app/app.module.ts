@@ -11,6 +11,7 @@ import { HelpComponent } from './help/help.component';
 import { PlayersComponent } from './players/players.component';
 import { GameComponent } from './game/game.component';
 import { FieldComponent } from './field/field.component';
+import { PlayerboardComponent } from './playerboard/playerboard.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FieldComponent } from './field/field.component';
     HelpComponent,
     GameComponent,
     PlayersComponent,
-    FieldComponent
+    FieldComponent,
+    PlayerboardComponent
   ],
   imports: [
     BrowserModule,
