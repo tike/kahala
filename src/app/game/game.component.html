@@ -2,7 +2,7 @@
   <div class="box">
     <h1>let's play</h1>
     <div class="board">
-      <div class="halfboard">
+      <div class="halfboard box">
         <div>
           <app-field *ngFor="let field of getOuterRow(0)" player="0" [field]="field"></app-field>
         </div>
@@ -11,7 +11,7 @@
         </div>
       </div>
 
-      <div class="halfboard">
+      <div class="halfboard box">
         <div>
           <app-field *ngFor="let field of getInnerRow(1)" player="0" [field]="field"></app-field>
         </div>

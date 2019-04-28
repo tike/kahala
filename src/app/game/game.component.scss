@@ -3,3 +3,11 @@
 .container {
   @include centeredContainer(80%);
 }
+
+.board {
+  @include centeredContainer(50%);
+}
+
+.halfboard {
+  @include centeredContainer(90%);
+}
