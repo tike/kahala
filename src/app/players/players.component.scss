@@ -1,3 +1,9 @@
+@import "../../_mixins.scss";
+
+div.container {
+  @include  centeredContainer(50%);
+}
+
 span.name {
   font-weight: bold;
 }
