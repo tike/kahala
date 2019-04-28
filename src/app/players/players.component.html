@@ -1,3 +1,15 @@
-<p>
-  players works!
-</p>
+<h1>Highscore</h1>
+<ol *ngIf="players !== undefined && players.length > 0; else elseBlock">
+  <li *ngFor="let player of getHighscores()">
+    <span class="name">{{player.name}}</span>
+    <span class="score">  (won: {{ (player.gamesPlayed != 0 ? player.Wins/player.gamesPlayed : 0.0) | percent }})</span>
+  </li>
+</ol>
+<ng-template #elseBlock>players not loaded yet.</ng-template>
+
+<div>
+  <h1>Add a player:</h1>
+  <label>Player name:</label>
+  <input #playerName />
+  <button (click)="addPlayer(playerName.value); playerName.value=''">add</button>
+</div>
