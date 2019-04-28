@@ -1,11 +1,8 @@
+@import "../../_mixins.scss";
+
 $FieldWidth: 50px;
 $FieldMargePad: 5px;
 
-$highlightColor: cyan;
-
-@mixin highlight {
-  background: $highlightColor;
-}
 
 span.stones {
   display: inline-block;

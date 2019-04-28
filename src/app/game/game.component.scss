@@ -1,11 +1,15 @@
 @import "../../_mixins.scss";
 
-.container {
-  @include centeredContainer(80%);
+.box {
+  @include centeredContainer(50%);
 }
 
-.board {
-  @include centeredContainer(80%);
+h1 {
+  font-size: 1.5em;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
 
 .halfboard {

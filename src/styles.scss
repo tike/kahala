@@ -5,4 +5,5 @@
 body {
   @include NoPadding;
   @include SansSerif;
+  background-image: url("/assets/background.jpg");
 }

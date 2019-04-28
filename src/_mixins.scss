@@ -12,7 +12,7 @@
 @mixin titleFont {
   font-size: 3rem;
   font-weight: 400;
-  color: #212529;
+  color: #b88c69;
 }
 
 @mixin fullWidthContainer {
@@ -38,4 +38,7 @@
     margin-top: 1px;
     margin-bottom: 1px;
   }
+  background: white;
 }
+
+$highlightColor: #7995d4;
