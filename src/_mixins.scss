@@ -19,3 +19,23 @@
   box-sizing: border-box;
   width: 100%;
 }
+
+@mixin centeredContainer($width) {
+  margin-left: auto;
+  margin-right: auto;
+  width: $width;
+}
+
+.box {
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 10px 0;
+  h1 {
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+}
