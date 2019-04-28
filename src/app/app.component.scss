@@ -1,8 +1,7 @@
 @import "../_mixins.scss";
 
 header {
-  box-sizing: border-box;
-  width: 100%;
+  @include fullWidthContainer;
   background: black;
   padding: 1em;
 
@@ -10,5 +9,30 @@ header {
     @include titleFont;
     color: white;
     text-align: center;
+  }
+}
+
+nav {
+  @include fullWidthContainer;
+  border-top: 1px solid white;
+  background: black;
+  padding:  1em;
+  ul {
+    @include NoPadding;
+    list-style: none;
+    li {
+      display: inline;
+      margin: 0.5em 1em;
+      a {
+        @include SansSerif;
+        color: white;
+        text-decoration: none;
+        font-size: 1.5em;
+        &:hover {
+          color: yellow;
+          text-decoration: underline;
+        }
+      }
+    }
   }
 }
