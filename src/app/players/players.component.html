@@ -13,9 +13,11 @@
 
 <div class="box">
   <h1>Add a player:</h1>
-  <label>Player name:</label>
-  <input #playerName />
-  <button (click)="addPlayer(playerName.value); playerName.value=''">add</button>
+  <div class="addPlayer">
+    <label>Player name:</label>
+    <input #playerName />
+    <button (click)="addPlayer(playerName.value); playerName.value=''">add</button>
+  </div>
 </div>
 
 </div>

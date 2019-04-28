@@ -7,3 +7,13 @@ div.container {
 span.name {
   font-weight: bold;
 }
+
+div.addPlayer {
+  @include centeredContainer(80%);
+  label {
+    margin-right: 10px;
+  }
+  input {
+    margin-right: 10px;
+  }
+}
