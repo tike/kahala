@@ -4,20 +4,20 @@
     <div class="board">
       <div class="halfboard box">
         <div>
-          <app-field *ngFor="let field of getOuterRow(0)" player="0" [field]="field"></app-field>
+          <app-field *ngFor="let field of getOuterRow(0)" player="0" [field]="field"  [inverted]="true"></app-field>
         </div>
         <div>
-          <app-field *ngFor="let field of getInnerRow(0)" player="0" [field]="field"></app-field>
+          <app-field *ngFor="let field of getInnerRow(0)" player="0" [field]="field"  [inverted]="false"></app-field>
         </div>
       </div>
 
       <div class="halfboard box">
         <div>
-          <app-field *ngFor="let field of getInnerRow(1)" player="0" [field]="field"></app-field>
+          <app-field *ngFor="let field of getInnerRow(1)" player="1" [field]="field" [inverted]="false"></app-field>
         </div>
 
         <div>
-          <app-field *ngFor="let field of getOuterRow(1)" player="0" [field]="field"></app-field>
+          <app-field *ngFor="let field of getOuterRow(1)" player="1" [field]="field" [inverted]="true"></app-field>
         </div>
       </div>
     </div>

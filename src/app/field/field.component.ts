@@ -12,6 +12,7 @@ import { GameService } from '../services/game.service';
 export class FieldComponent implements OnInit {
   @Input() player: number;
   @Input() field: Field;
+  @Input() inverted: boolean;
 
   showLeft: boolean;
   showRight: boolean;
