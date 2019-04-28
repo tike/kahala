@@ -1,5 +1,5 @@
 <span class="field" id="field.getID()">
-  <span class="arrow" id="left">◀</span>
-  <span class="stones">{{field.getStones()}}</span>
-  <span class="arrow" id="right">▶</span>
+  <span class="arrow" id="left" *ngIf="showLeft" (click)="startMove(false)">◀</span>
+  <span class="stones" (click)="canStart()">{{field.getStones()}}</span>
+  <span class="arrow" id="right" *ngIf="showRight" (click)="startMove(true)">▶</span>
 </span>

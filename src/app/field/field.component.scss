@@ -1,0 +1,47 @@
+$FieldWidth: 50px;
+$FieldMargePad: 5px;
+
+$highlightColor: cyan;
+
+@mixin highlight {
+  background: $highlightColor;
+}
+
+span.stones {
+  display: inline-block;
+  box-sizing: border-box;
+
+  width: $FieldWidth;
+  height: $FieldWidth;
+
+  padding: $FieldMargePad;
+  margin: $FieldMargePad;
+
+  border-radius: 90px;
+  background: black;
+  color: white;
+
+  font-size: 2em;
+  text-align: center;
+
+  &:hover {
+    color: $highlightColor;
+  }
+}
+
+span.arrow {
+  display: inline-block;
+  box-sizing: border-box;
+
+  &:hover {
+    color: $highlightColor;
+  }
+}
+
+span.arrow.left {
+  margin-right: 10px;
+}
+
+span.arrow.right {
+  margin-left: 10px;
+}
