@@ -9,12 +9,6 @@
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
-@mixin titleFont {
-  font-size: 3rem;
-  font-weight: 400;
-  color: #b88c69;
-}
-
 @mixin fullWidthContainer {
   box-sizing: border-box;
   width: 100%;

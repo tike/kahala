@@ -6,9 +6,11 @@ header {
   padding: 1em;
 
   h1 {
-    @include titleFont;
+    font-size: 3rem;
+    font-weight: 400;
     color: white;
     text-align: center;
+    margin-top: 0.5em;
   }
 }
 
