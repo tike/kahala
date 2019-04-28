@@ -3,6 +3,7 @@
     <h1>let's play</h1>
     <div class="board">
       <div class="halfboard box">
+        <app-playerboard  player="0"></app-playerboard>
         <div>
           <app-field *ngFor="let field of getOuterRow(0)" player="0" [field]="field"  [inverted]="true"></app-field>
         </div>
@@ -19,6 +20,7 @@
         <div>
           <app-field *ngFor="let field of getOuterRow(1)" player="1" [field]="field" [inverted]="true"></app-field>
         </div>
+        <app-playerboard player="1"></app-playerboard>
       </div>
     </div>
   </div>

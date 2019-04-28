@@ -1,0 +1,5 @@
+@import "../../_mixins.scss";
+
+.box {
+  @include centeredContainer(20%);
+}

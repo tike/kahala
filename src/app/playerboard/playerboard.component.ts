@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+
+import { GameService } from '../services/game.service';
 
 @Component({
   selector: 'app-playerboard',
@@ -6,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./playerboard.component.scss']
 })
 export class PlayerboardComponent implements OnInit {
+  @Input() player: number;
 
-  constructor() { }
+  constructor(private gameSvc: GameService) { }
 
   ngOnInit() {
+  }
+
+  getScore(): number {
+    return this.gameSvc.getScore(this.player);
   }
 
 }
