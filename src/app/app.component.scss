@@ -1,0 +1,14 @@
+@import "../_mixins.scss";
+
+header {
+  box-sizing: border-box;
+  width: 100%;
+  background: black;
+  padding: 1em;
+
+  h1 {
+    @include titleFont;
+    color: white;
+    text-align: center;
+  }
+}
