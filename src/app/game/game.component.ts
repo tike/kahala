@@ -13,9 +13,7 @@ export class GameComponent implements OnInit {
 
   constructor(private gameSvc: GameService) { }
 
-  ngOnInit() {
-    this.gameSvc.getScore(0);
-  }
+  ngOnInit() {}
 
   getOuterRow(playerid: number): Field[] {
     return this.gameSvc.getOuterRow(playerid);
