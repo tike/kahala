@@ -33,7 +33,7 @@ export class FieldComponent implements OnInit {
   }
 
   startMove(direction: boolean) {
-    this.gameSvc.startMove(this.player, this.field.getID(), direction);
+    this.gameSvc.startMove(this.player, this.field.id, direction);
     this.toggleArrows();
   }
 }

@@ -2,13 +2,13 @@
  *  Field class models a field for the kahala board game
  */
 export class Field {
-  private id: number;
+  private _id: number;
   private stones: number;
   private left: Field;
   private right: Field;
 
   constructor(id: number, stones: number) {
-    this.id = id;
+    this._id = id;
     this.stones = stones;
     this.left = null;
     this.right = null;
@@ -33,11 +33,11 @@ export class Field {
   }
 
   /**
-   * getID is the getter method for the field's
+   * id is the getter method for the field's id
    * @returns field.id initialized in the constructor call
    */
-  getID() :number{
-    return this.id;
+  get id(): number {
+    return this._id;
   }
 
   /**

@@ -45,11 +45,11 @@ export class GameService {
     let f: Field = this.board[playerid][start];
     do {
       f = this.doStep(f, f.takeStones(), direction);
-      if (f.canPlay() && f.getID() < 8) {
+      if (f.canPlay() && f.id < 8) {
         let opID = this.op(playerid);
-        let opponent: Field = this.board[opID][f.getID()];
+        let opponent: Field = this.board[opID][f.id];
         if (opponent.getStones() > 0) {
-          console.debug(`${playerid} robbing ${opID} ${opponent.getStones()} @ ${f.getID()}`);
+          console.debug(`${playerid} robbing ${opID} ${opponent.getStones()} @ ${f.id}`);
           f.putStones(opponent.takeStones());
         }
       }
